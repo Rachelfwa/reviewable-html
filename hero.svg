@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="1120" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08152E"/><stop offset="0.55" stop-color="#102B66"/><stop offset="1" stop-color="#0B5FEA"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#66E4FF"/><stop offset="1" stop-color="#7B61FF"/></linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#020817" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="30" fill="url(#bg)"/>
+  <circle cx="1070" cy="70" r="220" fill="#3CC8FF" opacity="0.09"/>
+  <circle cx="70" cy="610" r="250" fill="#816BFF" opacity="0.11"/>
+  <g transform="translate(72 76)">
+    <rect width="54" height="54" rx="16" fill="url(#glow)"/>
+    <path d="M17 17H37V30C37 37 32 41 27 41C22 41 17 37 17 30V17Z" fill="white" fill-opacity="0.96"/>
+    <circle cx="33.5" cy="20.5" r="7.5" fill="#FFCB45" stroke="#08152E" stroke-width="3"/>
+  </g>
+  <text x="146" y="112" fill="#8FAEE8" font-size="22" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">OPEN-SOURCE SKILL</text>
+  <text x="72" y="205" fill="white" font-size="70" font-family="Arial, sans-serif" font-weight="800">Reviewable HTML</text>
+  <text x="75" y="251" fill="#BDD0F4" font-size="25" font-family="Arial, sans-serif">Portable visual feedback for any static HTML file.</text>
+  <g filter="url(#shadow)" transform="translate(72 306)">
+    <rect width="1056" height="250" rx="22" fill="#F7F9FD"/>
+    <rect width="1056" height="44" rx="22" fill="#E9EEF8"/>
+    <rect y="22" width="1056" height="22" fill="#E9EEF8"/>
+    <circle cx="24" cy="22" r="6" fill="#FF6B6B"/><circle cx="44" cy="22" r="6" fill="#FFCB45"/><circle cx="64" cy="22" r="6" fill="#43D19E"/>
+    <rect x="24" y="72" width="620" height="20" rx="8" fill="#162447"/>
+    <rect x="24" y="108" width="460" height="11" rx="5" fill="#AAB5CA"/>
+    <rect x="24" y="130" width="530" height="11" rx="5" fill="#D0D7E4"/>
+    <rect x="24" y="170" width="290" height="54" rx="12" fill="#E8F0FF" stroke="#C8D9FF"/>
+    <rect x="330" y="170" width="290" height="54" rx="12" fill="#F3EEFF" stroke="#DCCEFF"/>
+    <rect x="677" y="63" width="355" height="162" rx="15" fill="white" stroke="#D9E1EF"/>
+    <text x="700" y="91" fill="#18233F" font-size="15" font-family="Arial, sans-serif" font-weight="700">3 comments</text>
+    <rect x="700" y="108" width="309" height="43" rx="9" fill="#F7F9FC"/>
+    <rect x="700" y="161" width="309" height="43" rx="9" fill="#F7F9FC"/>
+    <circle cx="300" cy="179" r="15" fill="#F0445A" stroke="white" stroke-width="4"/><text x="295" y="185" fill="white" font-size="14" font-family="Arial" font-weight="700">1</text>
+    <circle cx="610" cy="215" r="15" fill="#2563EB" stroke="white" stroke-width="4"/><text x="605" y="221" fill="white" font-size="14" font-family="Arial" font-weight="700">2</text>
+    <circle cx="1014" cy="165" r="15" fill="#2563EB" stroke="white" stroke-width="4"/><text x="1009" y="171" fill="white" font-size="14" font-family="Arial" font-weight="700">3</text>
+  </g>
+  <g transform="translate(720 266)">
+    <rect width="408" height="48" rx="24" fill="#0A1733" stroke="#44669F"/>
+    <text x="25" y="31" fill="#D8E6FF" font-size="16" font-family="Arial, sans-serif" font-weight="700">No extension</text>
+    <circle cx="147" cy="24" r="3" fill="#5C7EB9"/>
+    <text x="165" y="31" fill="#D8E6FF" font-size="16" font-family="Arial, sans-serif" font-weight="700">No server</text>
+    <circle cx="270" cy="24" r="3" fill="#5C7EB9"/>
+    <text x="288" y="31" fill="#D8E6FF" font-size="16" font-family="Arial, sans-serif" font-weight="700">No account</text>
+  </g>
+</svg>

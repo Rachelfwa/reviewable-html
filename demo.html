@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reviewable HTML demo</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f3f6fb;color:#15203b;font:15px/1.5 Inter,system-ui,sans-serif}.shell{max-width:1050px;margin:auto;padding:42px 24px}header{display:flex;justify-content:space-between;align-items:center}.eyebrow{color:#2563eb;font-size:12px;font-weight:800;letter-spacing:.12em}h1{font-size:34px;margin:6px 0}.btn{border:0;border-radius:9px;padding:11px 16px;background:#2563eb;color:#fff;font-weight:700;cursor:pointer}.metrics,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:24px}.metric,.card{background:#fff;border:1px solid #dfe5ef;border-radius:15px;padding:18px}.metric strong{display:block;font-size:30px;margin-top:7px}.card h2{font-size:18px;margin:0}.card p{color:#66728a}.bar{height:8px;border-radius:8px;background:#e9eef7;overflow:hidden}.bar i{display:block;height:100%;background:#2563eb}.decision{margin-top:18px;background:#102b66;color:#fff;border-radius:16px;padding:22px;display:flex;justify-content:space-between;align-items:center}.decision p{color:#c5d6f6;margin:4px 0 0}.modal-overlay{display:none;position:fixed;inset:0;background:#0b142a99;align-items:center;justify-content:center;z-index:100}.modal-overlay.open{display:flex}.modal{width:min(560px,90vw);background:#fff;border-radius:16px;overflow:hidden}.modal h2{margin:0;padding:18px 20px;border-bottom:1px solid #e5e9f1}.modal-body{padding:20px}.field{display:grid;gap:6px;margin-bottom:15px}.field label{font-weight:700;font-size:12px}.field textarea,.field select{border:1px solid #cfd7e5;border-radius:9px;padding:10px}.modal-foot{padding:14px 20px;background:#f8faff;display:flex;justify-content:flex-end;gap:8px}.btn.secondary{background:#e9eef7;color:#24314d}@media(max-width:700px){.metrics,.cards{grid-template-columns:1fr}.decision{align-items:flex-start;gap:20px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header><div><div class="eyebrow">PRODUCT REVIEW DEMO</div><h1>Growth experiment dashboard</h1></div><button class="btn">New experiment</button></header>
+    <section class="metrics"><article class="metric"><span>Activation</span><strong>62%</strong></article><article class="metric"><span>Weekly users</span><strong>8,420</strong></article><article class="metric"><span>Open decisions</span><strong>3</strong></article></section>
+    <section class="cards"><article class="card"><h2>Guided onboarding</h2><p>Shorten time-to-value for first-time users.</p><div class="bar"><i style="width:78%"></i></div></article><article class="card"><h2>AI starter prompts</h2><p>Make the empty state immediately actionable.</p><div class="bar"><i style="width:51%"></i></div></article><article class="card"><h2>Team invitation</h2><p>Test collaboration before the first export.</p><div class="bar"><i style="width:34%"></i></div></article></section>
+    <section class="decision"><div><strong>Decision needed: scale AI starter prompts?</strong><p>Evidence window closes on Friday.</p></div><button class="btn" id="open">Review decision</button></section>
+  </main>
+  <div class="modal-overlay" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><div class="modal"><h2 id="dialog-title">Experiment decision</h2><div class="modal-body"><div class="field"><label for="decision">Decision</label><select id="decision"><option>Scale</option><option>Pivot</option><option>Stop</option></select></div><div class="field"><label for="evidence">Evidence</label><textarea id="evidence" rows="4">Activation improved by 12%, but retention impact is not yet significant.</textarea></div></div><div class="modal-foot"><button class="btn secondary" id="close">Cancel</button><button class="btn">Confirm</button></div></div></div>
+  <script>var dialog=document.getElementById('dialog');document.getElementById('open').onclick=function(){dialog.classList.add('open')};document.getElementById('close').onclick=function(){dialog.classList.remove('open')};</script>
+</body>
+</html>

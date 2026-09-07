@@ -1,0 +1,14 @@
+interface:
+  display_name: Reviewable HTML
+  short_description: Turn static HTML into a portable, offline review file
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+  default_prompt: Use $html-review-annotation to make this HTML file reviewable and
+    shareable with comments.
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
